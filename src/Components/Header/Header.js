@@ -42,11 +42,12 @@ const Header = () => {
 
     return (
         <div>
-            <div className="border-b topbar">
+            <div className="border-b topbar h-12 ">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6">
                     <div
-                        className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-                        <div className='flex '>
+                        className="text-indigo-600 pt-3
+                        flex justify-between items-center md:justify-start md:space-x-10">
+                        <div className='flex space-x-4'>
                             <div className='space-x-2'>
                                 <span>{location}</span>
                                 <span>234 Triumph, Los Angeles, California, US</span>
@@ -129,6 +130,7 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
+
         </div>
     );
 };
