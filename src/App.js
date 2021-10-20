@@ -5,7 +5,9 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Notfound from './Components/NotFound/Notfound';
+import Contact from './Components/SinglePages/Contact';
 import Footer from './Components/SinglePages/Footer';
+import Healthtips from './Components/SinglePages/Healthtips';
 import PrivateRoute from './Components/SinglePages/PrivateRoute';
 import Register from './Components/SinglePages/Register';
 import ServiceDetails from './Components/SinglePages/ServiceDetails';
@@ -44,6 +46,14 @@ function App() {
             <PrivateRoute path='/servicedetails'>
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
+
+            <Route path='/contact'>
+              <Contact></Contact>
+            </Route>
+
+            <Route path='/health'>
+              <Healthtips></Healthtips>
+            </Route>
 
             <Route path='*'>
               <Notfound></Notfound>

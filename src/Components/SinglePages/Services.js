@@ -8,7 +8,7 @@ const Services = (props) => {
 
     return (
 
-        <div className="shadow-md rounded-md p-3">
+        <div className="shadow-md rounded-md p-3 py-6">
 
             <img className="text-6xl text-green-500" src={image} alt="" />
             <div className="mt-4">
@@ -16,8 +16,8 @@ const Services = (props) => {
                 <h2 className="text-xl text-gray-700">{name}</h2>
                 <p className="mt-2 text-base text-gray-500">{short}</p>
 
-                <div>
-                    <NavLink to={`/servicedetails/${id}`} className='bg-blue-500'>See More</NavLink>
+                <div className='mt-4'>
+                    <NavLink to={`/servicedetails/${id}`} className=' border-none rounded-md py-2 px-5 bg-green-600 text-white font-medium'>See More</NavLink>
                 </div>
             </div>
         </div>

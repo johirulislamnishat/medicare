@@ -20,9 +20,9 @@ const QualityCare = () => {
 
                                 <div className="flex flex-wrap justify-center md:justify-start gap-6 md:gap-10">
 
-                                    <button className='border-none rounded-md py-3 px-5 bg-green-500 text-white text-base'>Contact Us</button>
+                                    <button className='border-none rounded-md py-2 px-5 bg-green-600 text-white text-base'>Contact Us</button>
 
-                                    <button className='border-none rounded-md py-3 px-6 bg-green-500 text-white text-base'>About Us</button>
+                                    <button className='border-none rounded-md py-2 px-6 bg-green-600 text-white text-base'>About Us</button>
 
 
                                 </div>

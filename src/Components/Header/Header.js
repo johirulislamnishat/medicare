@@ -49,7 +49,7 @@ const Header = () => {
             <div className="border-b topbar h-12 ">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6">
                     <div
-                        className="pt-3 text-indigo-600 
+                        className="pt-3 text-green-700 
                         flex justify-between items-center md:justify-start md:space-x-10">
                         <div className='flex space-x-4'>
                             <div className='space-x-2'>
@@ -144,7 +144,7 @@ const Header = () => {
                                 Login
                             </NavLink>
                         </li>
-                        <span className='hidden md:block text-center px-6'>{user.displayName.slice(0, 7)}</span>
+                        <span className='hidden md:block text-center px-4 w-20 truncate'>{user.displayName}</span>
                         {user?.email &&
                             <li className='nav-item'>
 
