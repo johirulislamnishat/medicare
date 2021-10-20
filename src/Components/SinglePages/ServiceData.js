@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import ServiceDetails from './ServiceDetails';
 import Services from './Services';
 
 const ServiceData = () => {

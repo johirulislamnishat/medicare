@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import useAuth from '../hooks/useAuth';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import logo from '../../logo.png'
