@@ -1,13 +1,11 @@
 .navbar {
     height: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
   }
   
   .navbar-logo {
-    color: tomato;
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
@@ -19,7 +17,6 @@
     list-style: none;
     text-align: center;
     width: 70vw;
-    justify-content: end;
   }
   
   .nav-item {
@@ -29,19 +26,16 @@
   }
   
   .nav-links {
-    color: tomato;
     text-decoration: none;
     padding: 0.5rem 1rem;
   }
   
   .nav-links:hover {
-    background-color: #1888ff;
-    border-radius: 4px;
     transition: all 0.2s ease-out;
   }
   
   .fa-bars {
-    color: tomato;
+    color: green;
   }
   
   .nav-links-mobile {
@@ -112,7 +106,7 @@
     }
   
     .fa-times {
-      color: #fff;
+      color: green;
       font-size: 2rem;
     }
   

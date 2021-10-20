@@ -5,6 +5,7 @@ import { faEnvelope, faMapMarkerAlt, faPhoneAlt } from '@fortawesome/free-solid-
 import { faFacebookF, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { NavLink } from 'react-router-dom';
 import Dropdown from '../Dropdown/Dropdown';
+import useAuth from '../hooks/useAuth';
 
 
 const Header = () => {
@@ -40,12 +41,14 @@ const Header = () => {
         }
     };
 
+    const { user, logOut } = useAuth();
+
     return (
         <div>
             <div className="border-b topbar h-12 ">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6">
                     <div
-                        className="text-indigo-600 pt-3
+                        className="pt-3 text-indigo-600 
                         flex justify-between items-center md:justify-start md:space-x-10">
                         <div className='flex space-x-4'>
                             <div className='space-x-2'>
@@ -82,18 +85,19 @@ const Header = () => {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <NavLink to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink to='/home' className='nav-links text-green-700 font-medium' onClick={closeMobileMenu}>
                                 Home
                             </NavLink>
                         </li>
+
                         <li
                             className='nav-item'
                             onMouseEnter={onMouseEnter}
                             onMouseLeave={onMouseLeave}
                         >
                             <NavLink
-                                to='/services'
-                                className='nav-links'
+                                to='/servicedetails'
+                                className='nav-links text-green-700 font-medium'
                                 onClick={closeMobileMenu}
                             >
                                 Services <i className='fas fa-caret-down' />
@@ -102,29 +106,55 @@ const Header = () => {
                         </li>
                         <li className='nav-item'>
                             <NavLink
-                                to='/products'
-                                className='nav-links'
+                                to='/health'
+                                className='nav-links text-green-700 font-medium'
                                 onClick={closeMobileMenu}
                             >
-                                Products
+                                Health Tips
                             </NavLink>
                         </li>
                         <li className='nav-item'>
                             <NavLink
-                                to='/contact-us'
-                                className='nav-links'
+                                to='/carrer'
+                                className='nav-links text-green-700 font-medium'
+                                onClick={closeMobileMenu}
+                            >
+                                Carrer
+                            </NavLink>
+                        </li>
+                        <li className='nav-item'>
+                            <NavLink
+                                to='/contact'
+                                className='nav-links text-green-700 font-medium'
                                 onClick={closeMobileMenu}
                             >
                                 Contact Us
                             </NavLink>
                         </li>
+
+                        <li className='nav-item'>
+                            <NavLink to='/appointment' className='nav-links border-none rounded-md py-3 px-5 bg-green-600 text-white font-medium' onClick={closeMobileMenu}>
+                                Appointment
+                            </NavLink>
+                        </li>
+                        <span>{user.displayName}</span>
+                        {user?.email &&
+                            <li className='nav-item'>
+
+                                <NavLink to='/login' className='nav-links bg-green-600 text-white font-medium border-none rounded-md py-3 px-5' onClick={closeMobileMenu}>
+                                    Login
+                                </NavLink>
+                                <NavLink to='/login' className='nav-links bg-green-600 text-white font-medium ' onClick={closeMobileMenu, logOut}>
+                                    Log Out
+                                </NavLink>
+                            </li>}
                         <li>
                             <NavLink
-                                to='/sign-up'
-                                className='nav-links-mobile'
+                                to='/login'
+                                className='nav-links-mobile bg-blue-500'
                                 onClick={closeMobileMenu}
                             >
-                                Sign Up
+                                Login
                             </NavLink>
                         </li>
                     </ul>

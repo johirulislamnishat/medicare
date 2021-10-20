@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
     const careProcedure = <FontAwesomeIcon icon={faProcedures} />
 
     return (
-        <div className="bg-white mt-6 md:mt-14">
+        <div className="bg-white mt-4 md:mt-14">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 text-center">Why Choose Us</h2>
 
@@ -18,7 +18,7 @@ const WhyChooseUs = () => {
 
                     {/* item 01 */}
                     <div className="shadow-md rounded-md p-3">
-                        <span className="text-6xl flex items-center text-green-500">{heartBeat}</span>
+                        <span className="text-6xl text-green-500">{heartBeat}</span>
 
                         <div className="mt-4">
 
@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
 
                     {/* item 02 */}
                     <div className="shadow-md rounded-md p-3">
-                        <span className="text-6xl flex items-center text-green-500">{care}</span>
+                        <span className="text-6xl text-green-500">{care}</span>
 
                         <div className="mt-4">
 
@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
 
                     {/* item 03 */}
                     <div className="shadow-md rounded-md p-3">
-                        <span className="text-6xl flex items-center text-green-500">{firstAid}</span>
+                        <span className="text-6xl text-green-500">{firstAid}</span>
 
                         <div className="mt-4">
 
@@ -60,7 +60,7 @@ const WhyChooseUs = () => {
 
                     {/* item 04 */}
                     <div className="shadow-md rounded-md p-3">
-                        <span className="text-6xl flex items-center text-green-500">{careProcedure}</span>
+                        <span className="text-6xl text-green-500">{careProcedure}</span>
 
                         <div className="mt-4">
 

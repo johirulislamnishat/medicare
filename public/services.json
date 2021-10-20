@@ -1,0 +1,98 @@
+[
+    {
+        "id": 101,
+        "key": 201,
+        "name": "Medicine Department",
+        "image": "./assets/services/medicine.png",
+        "short": "Forth unto night their foubehold night theiearth.",
+        "long": "Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth."
+    },
+    {
+        "id": 102,
+        "key": 202,
+        "name": "Gynecology Department",
+        "image": "./assets/services/gynecology.png",
+        "short": "Forth unto night their foubehold night theiearth.",
+        "long": "Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth."
+    },
+    {
+        "id": 103,
+        "key": 203,
+        "name": "Orthopedic Department",
+        "image": "./assets/services/orthopedics.png",
+        "short": "Forth unto night their foubehold night theiearth.",
+        "long": "Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth."
+    },
+    {
+        "id": 104,
+        "key": 204,
+        "name": "Neurology Department",
+        "image": "./assets/services/neurology.png",
+        "short": "Forth unto night their foubehold night theiearth.",
+        "long": "Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth."
+    },
+    {
+        "id": 105,
+        "key": 205,
+        "name": "Dental Department",
+        "image": "./assets/services/tooth.png",
+        "short": "Forth unto night their foubehold night theiearth.",
+        "long": "Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth."
+    },
+    {
+        "id": 106,
+        "key": 206,
+        "name": "Surgery Department",
+        "image": "./assets/services/plastic-surgery.png",
+        "short": "Forth unto night their foubehold night theiearth.",
+        "long": "Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth."
+    },
+    {
+        "id": 107,
+        "key": 207,
+        "name": "Dermatology Department",
+        "image": "./assets/services/dermatology.png",
+        "short": "Forth unto night their foubehold night theiearth.",
+        "long": "Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth."
+    },
+    {
+        "id": 108,
+        "key": 208,
+        "name": "Cardiology Department",
+        "image": "./assets/services/health-insurance.png",
+        "short": "Forth unto night their foubehold night theiearth.",
+        "long": "Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth."
+    },
+    {
+        "id": 109,
+        "key": 209,
+        "name": "ECG Department",
+        "image": "./assets/services/ecg-reading.png",
+        "short": "Forth unto night their foubehold night theiearth.",
+        "long": "Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth."
+    },
+    {
+        "id": 110,
+        "key": 210,
+        "name": "CT-SCAN Department",
+        "image": "./assets/services/ct-scan.png",
+        "short": "Forth unto night their foubehold night theiearth.",
+        "long": "Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth."
+    },
+    {
+        "id": 111,
+        "key": 211,
+        "name": "X-Ray Department",
+        "image": "https://i.ibb.co/LnZhLPM/x-ray-of-a-man.png",
+        "short": "Forth unto night their foubehold night theiearth.",
+        "long": "Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth."
+    },
+    {
+        "id": 112,
+        "key": 212,
+        "name": "Laboratory",
+        "image": "./assets/services/laboratory.png",
+        "short": "Forth unto night their foubehold night theiearth.",
+        "long": "Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth. Forth unto night their foubehold night theiearth."
+    }
+]
