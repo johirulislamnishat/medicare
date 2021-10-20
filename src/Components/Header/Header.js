@@ -6,6 +6,7 @@ import { faFacebookF, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg
 import { NavLink } from 'react-router-dom';
 import Dropdown from '../Dropdown/Dropdown';
 import useAuth from '../hooks/useAuth';
+import logo from '../../logo.png'
 
 
 const Header = () => {
@@ -78,12 +79,12 @@ const Header = () => {
             <div>
                 <nav className='navbar max-w-7xl mx-auto px-4 sm:px-6'>
                     <NavLink to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        EPIC
+                        <img className='w-20' src={logo} alt="" />
                     </NavLink>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
-                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <ul className={click ? 'nav-menu active' : 'nav-menu ml-20'}>
                         <li className='nav-item'>
                             <NavLink to='/home' className='nav-links text-green-700 font-medium' onClick={closeMobileMenu}>
                                 Home
@@ -133,17 +134,20 @@ const Header = () => {
                         </li>
 
                         <li className='nav-item'>
-                            <NavLink to='/appointment' className='nav-links border-none rounded-md py-3 px-5 bg-green-600 text-white font-medium' onClick={closeMobileMenu}>
+                            <NavLink to='/appointment' className='nav-links border-none rounded-md py-3 px-5 bg-green-600 text-white font-medium ml-6 mr-4' onClick={closeMobileMenu}>
                                 Appointment
                             </NavLink>
                         </li>
-                        <span>{user.displayName}</span>
+
+                        <li className='nav-item'>
+                            <NavLink to='/login' className='nav-links bg-green-600 text-white font-medium border-none rounded-md py-3 px-5' onClick={closeMobileMenu}>
+                                Login
+                            </NavLink>
+                        </li>
+                        <span className='hidden md:block text-center px-6'>{user.displayName.slice(0, 7)}</span>
                         {user?.email &&
                             <li className='nav-item'>
 
-                                <NavLink to='/login' className='nav-links bg-green-600 text-white font-medium border-none rounded-md py-3 px-5' onClick={closeMobileMenu}>
-                                    Login
-                                </NavLink>
                                 <NavLink to='/login' className='nav-links bg-green-600 text-white font-medium ' onClick={closeMobileMenu, logOut}>
                                     Log Out
                                 </NavLink>

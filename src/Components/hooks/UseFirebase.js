@@ -31,7 +31,7 @@ const useFirebase = () => {
     useEffect(() => {
         onAuthStateChanged(auth, user => {
             if (user) {
-                console.log('sdgds', user)
+
                 setUser(user)
             }
         })

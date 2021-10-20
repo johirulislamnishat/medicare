@@ -1,9 +1,46 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react/cjs/react.development';
 import useAuth from '../hooks/useAuth';
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import logo from '../../logo.png'
+
 
 const Register = () => {
 
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+    const auth = getAuth();
+
+
+    const handleEmail = e => {
+        setEmail(e.target.value)
+    }
+    const handlePassword = e => {
+        setPassword(e.target.value)
+    }
+
+
+    const handleRegistration = e => {
+        e.preventDefault();
+        if (password.length < 6) {
+            setError('Enter at least 6 character long')
+            return;
+        }
+        createUserWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                // Signed in 
+                const user = result.user;
+                // ...
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+            });
+
+    }
     const { googleSignIn } = useAuth();
     return (
         <div>
@@ -13,7 +50,7 @@ const Register = () => {
                 >
                     <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
                         <div>
-                            <h1 className='text-center'>MediCare</h1>
+                            <img className='w-20 mx-auto' src={logo} alt="" />
                         </div>
                         <div className="mt-12 flex flex-col items-center">
                             <h1 className="text-2xl xl:text-3xl font-extrabold">
@@ -74,17 +111,22 @@ const Register = () => {
                                     </div>
                                 </div>
 
-                                <div className="mx-auto max-w-xs">
-                                    <input
+                                <form onSubmit={handleRegistration} className="mx-auto max-w-xs">
+                                    <input onBlur={handleEmail}
                                         className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
                                         type="email"
-                                        placeholder="Email"
+                                        placeholder="Email" required
                                     />
-                                    <input
+                                    <input onBlur={handlePassword}
                                         className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
                                         type="password"
-                                        placeholder="Password"
+                                        placeholder="Password" required
                                     />
+
+                                    <h1 className="text-base text-red-700 mt-2">
+                                        {error}
+                                    </h1>
+
                                     <button
                                         className="mt-5 tracking-wide font-semibold bg-indigo-500 text-gray-100 w-full py-4 rounded-lg hover:bg-indigo-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
                                     >
@@ -119,7 +161,7 @@ const Register = () => {
                                             Privacy Policy
                                         </a>
                                     </p>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>

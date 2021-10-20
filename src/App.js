@@ -5,6 +5,7 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Notfound from './Components/NotFound/Notfound';
+import Footer from './Components/SinglePages/Footer';
 import PrivateRoute from './Components/SinglePages/PrivateRoute';
 import Register from './Components/SinglePages/Register';
 import ServiceDetails from './Components/SinglePages/ServiceDetails';
@@ -48,6 +49,8 @@ function App() {
               <Notfound></Notfound>
             </Route>
           </Switch>
+
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </>

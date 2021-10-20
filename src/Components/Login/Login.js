@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
+import logo from '../../logo.png'
 
 
 const Login = () => {
@@ -24,7 +25,7 @@ const Login = () => {
                 >
                     <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
                         <div>
-                            <h1 className='text-center'>MediCare</h1>
+                            <img className='w-20 mx-auto' src={logo} alt="" />
                         </div>
                         <div className="mt-12 flex flex-col items-center">
                             <h1 className="text-2xl xl:text-3xl font-extrabold">
